@@ -1,0 +1,21 @@
+.log-img{
+    height:500px;
+    width:800px;
+}
+@media only screen and (max-width:576px) {
+    .vector{
+        display: none;
+    }
+}
+
+.cardx{
+    height:700px;
+    background-color: #ffffff;
+
+}
+.card3{
+    margin-top: 50px;
+}
+.social{
+    margin: 50px;
+}

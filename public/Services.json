@@ -1,0 +1,33 @@
+[
+    {
+      "name":"Jonny Kim",
+      "email":"jonnykim54@gmail.com",
+      "rating":5,
+      "review":"Trusted by elite racers and enthusiasts worldwide, the Rekluse Core EXP auto-clutch is the premiere centrifugal clutch system. Using the principles of centrifugal force this clutch automatically engages and disengages based on engine RPM. "
+    },
+    {
+      "name":"Michale Fillips",
+      "email":"fillips67@yahoo.com",
+      "rating":5,
+      "overview":"The helmet is of the motocross type with a sun visor on top. It also sports multiple air vents to allow fresh air inside the lid.This helmet sports the special MotoGP livery, in blue shade."
+    },
+    {
+      "name":"Chrish Morrish",
+      "email":"morrish98@outlook.com",
+      "rating":5,
+      "overview":"These forged wheels place the highest material strength in the same direction as the operating load, creating a light and strong wheel. They feature a contour rim lip for a graceful arc from the rim to the lip. Matching PM rotor is also available separately."
+    },
+    {
+      "name":"James Leon",
+      "email":"jamesleon77@g,ail.com",
+      "rating":4,
+      "overview":"This is particularly relevant for the heavy touring machines as it’s torque that rockets you onto the highway and it’s definitely torque that lets you effortlessly push a loaded bagger around slower traffic."
+    },
+    {
+      "name":"Rock Denver",
+      "email":"rockden190@yahoo.com",
+      "rating":5,
+      "overview":"To keep rotating mass at a minimum, weight saving holes were drilled into every other chain link without compromising the chains strength. "
+    }
+
+  ]

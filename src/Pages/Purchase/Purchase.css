@@ -1,0 +1,36 @@
+.pur{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(99, 202, 190);
+    width: 300px;
+
+
+}
+.shop{
+    width:800px;
+    border:1px solid rgb(90, 84, 84);
+    border-radius: 15px;
+    padding:15px;
+    margin-right: 50px;
+
+}
+.detail{
+    margin-left: 50px;
+    border:1px solid rgb(90, 84, 84);
+    border-radius: 15px;
+    padding:15px;
+    margin-right: 20px;
+}
+.imgp{
+    margin-left: 100px;
+    border-radius: 40px;
+    width:400px;
+    height:400px;
+}
+.kkl{
+    margin-top:100px;
+    margin-left:100px;
+}
