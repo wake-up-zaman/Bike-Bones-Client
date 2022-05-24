@@ -20,7 +20,7 @@ const Purchase = () =>{
 
     }, [])
 
-    const handleBooking = event => {
+    const handleProfile = event => {
         event.preventDefault();
         const purchase = {
             id: _id,
@@ -77,7 +77,7 @@ const Purchase = () =>{
             </div>
             <div className='shop'>
                 <h2 className='text-center text-3xl text-bold'>Add To Cart</h2>
-                <form onSubmit={handleBooking} className='mt-3 form'>
+                <form onSubmit={handleProfile} className='mt-3 form'>
                 <label className="label">
                     <span className="label-text">Parts Quantity</span>
                 </label>

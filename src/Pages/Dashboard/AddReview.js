@@ -13,7 +13,7 @@ const AddReview = () => {
             email: user.email,
             name: user.displayName,
             rating:event.target.rating.value,
-            review:event.target.description.value
+            review:event.target.description.value,
         }
 
         fetch('http://localhost:5000/reviews', {
@@ -53,7 +53,7 @@ const AddReview = () => {
         <label className="label">
             <span className="label-text">Review</span>
         </label>
-            <input type="text" name="description" placeholder="Add your review" className="input input-bordered w-full max-w-xs inputField-des  mb-2" />
+            <textarea type="text" name="description" placeholder="Add your review" className="input input-bordered w-full max-w-xs inputField-des  mb-2" />
             <label className="label">
             <span className="label-text"></span>
         </label>
