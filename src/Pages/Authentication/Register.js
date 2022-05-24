@@ -7,6 +7,7 @@ import google from '../../Pages/Images/google.png'
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import Loading from '../Shared/Loading/Loading';
 import auth from '../../firebase.init';
+import useToken from '../../hooks/useToken';
 const Register = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
@@ -18,6 +19,8 @@ const Register = () => {
       ] = useCreateUserWithEmailAndPassword(auth);
       const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
       let signInError;
+
+      const [token]=useToken(user || gUser);
       const navigate=useNavigate();
 
 
@@ -31,7 +34,7 @@ const Register = () => {
       const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password)
         await updateProfile({ displayName: data.name});
-        navigate('/home');
+        
     
     };
 
