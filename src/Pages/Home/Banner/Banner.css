@@ -1,0 +1,36 @@
+.banner-img{
+    width:1550PX;
+    height: 750PX;
+}
+.banner-text{
+    font-family: 'Franklin Gothic Medium';
+
+}
+
+.banner-text-1{
+    font-size: 60px;
+    color: aliceblue;
+    position: absolute;
+    top:300px;
+    left:50px;
+
+
+}
+.banner-text-2{
+    font-size: 60px;
+    color: aliceblue;
+    position: absolute;
+    top:300px;
+    left:50px;
+    font-family: 'Dancing Script', cursive;
+
+}
+.banner-text-3{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top:400px;
+    left:50px;
+    font-family: 'Dancing Script', cursive;
+
+}
