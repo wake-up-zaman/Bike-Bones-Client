@@ -44,10 +44,10 @@ const MyProfile = () => {
                     <h2 className='text-xl text-bold'>{user.email}</h2>
                 </div>
             </div>
-            <div className='ml-48  mt-4 flex align-items-center'>
+            <div className='ml-48  mt-2 flex align-items-center'>
 
-                <form onSubmit={handleBooking} className='profile review mt-3 form'>
-                    <h2 className=' mb-8 text-3xl text-center text-bold'>Complete/Update Your Profile</h2>
+                <form onSubmit={handleBooking} className='profile review mt-2 form'>
+                    <h2 className=' mb-4 text-3xl  text-primary text-center text-bold'>Complete/Update Profile</h2>
                     <label className="label">
                         <span className="label-text">Education</span>
                     </label>

@@ -48,8 +48,8 @@ function App() {
           <Route path="myProfile" element={<MyProfile></MyProfile>}></Route>
           <Route path="makeAdmin" element={<RequireAdmin><MakeAdmin></MakeAdmin></RequireAdmin>}></Route>
           <Route path="addProduct" element={<RequireAdmin><AddProduct></AddProduct></RequireAdmin>}></Route>
-          <Route path="manageProduct" element={<RequireAdmin><ManageProduct></ManageProduct></RequireAdmin>}></Route>
-          <Route path="manageAllProduct" element={<RequireAdmin><ManageAllProduct></ManageAllProduct></RequireAdmin>}></Route>
+          <Route path="manageOrders" element={<RequireAdmin><ManageProduct></ManageProduct></RequireAdmin>}></Route>
+          <Route path="manageAllProducts" element={<RequireAdmin><ManageAllProduct></ManageAllProduct></RequireAdmin>}></Route>
         </Route>
       </Routes>
       <ToastContainer />
