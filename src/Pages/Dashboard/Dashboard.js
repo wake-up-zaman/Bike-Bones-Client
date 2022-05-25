@@ -1,7 +1,10 @@
 import React from 'react';
+import { useQuery } from 'react-query';
 import { Link, Outlet } from 'react-router-dom';
 
 const Dashboard = () => {
+
+
     return (
         <div class="drawer drawer-mobile">
         <input id="dashboard-sidebar" type="checkbox" class="drawer-toggle" />
@@ -15,6 +18,10 @@ const Dashboard = () => {
                 <li><Link to='/dashboard'>My Orders</Link></li>
                 <li><Link to='/dashboard/AddReview'>Add Review</Link></li>
                 <li><Link to='/dashboard/myProfile'>My Profile</Link></li>
+                <li><Link to='/dashboard/makeAdmin'>Make Admin</Link></li>
+                <li><Link to='/dashboard/addProduct'>Add Product</Link></li>
+                <li><Link to='/dashboard/manageProduct'>Manage Product</Link></li>
+                <li><Link to='/dashboard/manageAllProduct'>Manage All Products</Link></li>
             </ul>
         </div>
     </div>

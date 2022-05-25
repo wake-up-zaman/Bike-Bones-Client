@@ -1,5 +1,7 @@
+import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { Navigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 
@@ -8,11 +10,27 @@ const MyOrders = () => {
     const [orders,setOrders]=useState([]);
     useEffect(()=>{
         if(user){
-            fetch(`http://localhost:5000/purchase?email=${user.email}`)
-            .then(res=>res.json())
-            .then(data=>setOrders(data))
-        }
-    },[user])
+            fetch(`http://localhost:5000/purchase?email=${user.email}`,{
+                method: 'GET',
+                headers: {
+                    'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+                }
+            })
+            .then(res => {
+                console.log('res', res);
+                if (res.status === 401 || res.status === 403) {
+                    signOut(auth);
+                    localStorage.removeItem('accessToken');
+                    Navigate('/');
+                }
+                return res.json()
+            })
+            .then(data => {
+
+                setOrders(data);
+            });
+    }
+}, [user])
     return (
         <div className='text-center lg:text-left'>
             <h2 className='text-center text-3xl font-bold mt-6 mb-3'>My Orders:{orders.length}</h2>

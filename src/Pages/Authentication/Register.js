@@ -31,6 +31,9 @@ const Register = () => {
       if (loading || gLoading || updating) {
           return <Loading></Loading>;
       }
+      if(token){
+          navigate('/home');
+      }
       const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password)
         await updateProfile({ displayName: data.name});

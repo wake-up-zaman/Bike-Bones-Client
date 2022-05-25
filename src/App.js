@@ -14,6 +14,10 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import AddReview from './Pages/Dashboard/AddReview';
 import MyProfile from './Pages/Dashboard/MyProfile';
+import MakeAdmin from './Pages/Dashboard/MakeAdmin';
+import AddProduct from './Pages/Dashboard/AddProduct';
+import ManageProduct from './Pages/Dashboard/ManageProduct';
+import ManageAllProduct from './Pages/Dashboard/ManageAllProduct';
 
 function App() {
   return (
@@ -41,17 +45,11 @@ function App() {
           <Route index element={<MyOrders></MyOrders>}></Route>
           <Route path="addReview" element={<AddReview></AddReview>}></Route>
           <Route path="myProfile" element={<MyProfile></MyProfile>}></Route>
+          <Route path="makeAdmin" element={<MakeAdmin></MakeAdmin>}></Route>
+          <Route path="addProduct" element={<AddProduct></AddProduct>}></Route>
+          <Route path="manageProduct" element={<ManageProduct></ManageProduct>}></Route>
+          <Route path="manageAllProduct" element={<ManageAllProduct></ManageAllProduct>}></Route>
         </Route>
-        {/* <Route path='dashboard' element={
-            <RequireAuth>
-              <Dashboard></Dashboard>
-            </RequireAuth>
-        }>
-          <Route index element={<MyOrders></MyOrders>}></Route>
-          <Route path="myOrder" element={<MyOrders></MyOrders>}></Route>
-          <Route path="addReview" element={<AddReview></AddReview>}></Route>
-          <Route path="myProfile" element={<MyProfile></MyProfile>}></Route>
-        </Route> */}
       </Routes>
       <ToastContainer />
       <Footer></Footer>
