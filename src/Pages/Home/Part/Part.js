@@ -28,7 +28,7 @@ const Part = ({ part }) => {
 
             </div>
 
-            <input onClick={()=>navigateToPurchase(_id)} type="submit" value="Buy Now" className="btn btn-accent  w-full max-w-xs ml-3" />
+            <input onClick={()=>navigateToPurchase(_id)} type="submit" value="Buy Now" className="btn btn-primary text-white mt-5  mb-8" />
 
         </div>
     );
