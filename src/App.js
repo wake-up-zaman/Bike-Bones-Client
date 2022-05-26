@@ -17,7 +17,7 @@ import MyProfile from './Pages/Dashboard/MyProfile';
 import MakeAdmin from './Pages/Dashboard/MakeAdmin';
 import AddProduct from './Pages/Dashboard/AddProduct';
 import ManageProduct from './Pages/Dashboard/ManageProduct';
-import ManageAllProduct from './Pages/Dashboard/ManageAllProduct';
+import ManageOrders from './Pages/Dashboard/ManageOrders';
 import RequireAdmin from './Pages/Authentication/RequireAdmin';
 import PageNotFound from './Pages/Shared/PageNotFound/PageNotFound';
 
@@ -49,8 +49,8 @@ function App() {
           <Route path="myProfile" element={<MyProfile></MyProfile>}></Route>
           <Route path="makeAdmin" element={<RequireAdmin><MakeAdmin></MakeAdmin></RequireAdmin>}></Route>
           <Route path="addProduct" element={<RequireAdmin><AddProduct></AddProduct></RequireAdmin>}></Route>
-          <Route path="manageOrders" element={<RequireAdmin><ManageProduct></ManageProduct></RequireAdmin>}></Route>
-          <Route path="manageAllProducts" element={<RequireAdmin><ManageAllProduct></ManageAllProduct></RequireAdmin>}></Route>
+          <Route path="manageProducts" element={<RequireAdmin><ManageProduct></ManageProduct></RequireAdmin>}></Route>
+          <Route path="manageOrders" element={<RequireAdmin><ManageOrders></ManageOrders></RequireAdmin>}></Route>
         </Route>
         <Route path='*' element={<PageNotFound></PageNotFound>}></Route>
       </Routes>

@@ -38,7 +38,7 @@ const MakeAdmin = () => {
                 <table class="table w-full">
                     <thead>
                         <tr>
-                            <th></th>
+                            <th>No</th>
                             <th>Email</th>
                             <th>Make Admin</th>
                             <th>Remove User</th>
@@ -47,10 +47,11 @@ const MakeAdmin = () => {
                     </thead>
                     <tbody>
                     {
-                            users.map((user) =>
+                            users.map((user,index) =>
                                 <UserRow
                                 key={user._id}
                                 user={user}
+                                index={index}
                                 refetch={refetch}
                                 >
                                 </UserRow>
