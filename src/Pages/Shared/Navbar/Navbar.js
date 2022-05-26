@@ -4,7 +4,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import './Navbar.css'
-
+import { FaUserCircle } from "react-icons/fa";
 
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
         {
             user && <li><Link to='/dashboard'>Dashboard</Link></li>
         }
-        { user ?<li className='' onClick={logout} ><Link to='/'>Sign Out</Link> </li> :<li><Link to='/login'>Login</Link></li>}
+        { user ?<li><span onClick={logout}><Link to='/'>Sign Out</Link></span><div class='iconNav'><FaUserCircle /></div><p>{user.displayName}</p> </li> :<li><Link to='/login'>Login</Link></li>}
     </>
     return (
         <div className="navbar bg-base-100 ">

@@ -1,0 +1,29 @@
+.extra-form{
+    margin-left: 350px;
+    margin-top: 30px;
+
+}
+.input-form{
+    border: 1px solid black;
+    height: 60px;
+    border-radius: 30px;
+    width:400px;
+    margin-bottom: 20px;
+}
+.extra2-main{
+    background-color: #C3E6F6;
+    padding: 40px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 50px;
+}
+.extra2-banner{
+    margin-top: 20px;
+}
+.COLOR1{
+    color: rgb(18, 8, 192);
+}
+.COLOR3{
+    color: rgb(179, 15, 15);
+}
