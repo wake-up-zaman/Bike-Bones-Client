@@ -7,8 +7,10 @@ const CheckoutForm = ({purchase}) => {
     const elements=useElements();
     const [cardError, setCardError]=useState('')
     const [clientSecret,setClientSecret]=useState('');
+    const [success,setSuccess]=useState('');
+    const [transactionId, setTransactionId] = useState('');
 
-    const {price}=purchase;
+    const {price,name,email}=purchase;
 
     useEffect(()=>{
         fetch('http://localhost:5000/create-payment-intent',{
@@ -21,7 +23,7 @@ const CheckoutForm = ({purchase}) => {
         })
         .then(res=>res.json())
         .then(data=>{
-            if(data?.clentSecret){
+            if(data?.clientSecret){
                 setClientSecret(data.clientSecret);
             }
         })
@@ -43,18 +45,30 @@ const CheckoutForm = ({purchase}) => {
             card
         });
         setCardError(error?.message || '');
+        setSuccess('');
+
+
         const { paymentIntent, error: intentError } = await stripe.confirmCardPayment(
             clientSecret,
             {
                 payment_method: {
                     card: card,
                     billing_details: {
-                        name: ,
-                        email: 
+                        name: name,
+                        email: email
                     },
                 },
             },
         );
+        if(intentError){
+            setCardError(intentError?.message)
+        }
+        else{
+            setCardError('');
+            setTransactionId(paymentIntent.id);
+            console.log(paymentIntent);
+            setSuccess('Payment is completed');
+        }
 
     }
     return (
@@ -76,19 +90,19 @@ const CheckoutForm = ({purchase}) => {
                         },
                     }}
                 />
-                <button className='btn btn-success btn-sm mt-4' type="submit" disabled={!stripe || !clientSecret}>
+                <button className='btn btn-success btn-sm mt-4' type="submit" disabled={!stripe || !clientSecret || success} >
                     Pay
                 </button>
             </form>
             {
                 cardError && <p className='text-red-500'>{cardError}</p>
             }
-            {/* {
+            {
                 success && <div className='text-green-500'>
                     <p>{success}  </p>
                     <p>Your transaction Id: <span className="text-orange-500 font-bold">{transactionId}</span> </p>
                 </div>
-            } */}
+            }
         </>
     );
 };
