@@ -7,7 +7,7 @@ const Product = ({part,index,handleDelete}) => {
             <td>{part.name}</td>
             <td>{part.available_product}</td>
             <td>{part.price}</td>
-            <td><button onClick={()=>handleDelete(part._id)} class="btn btn-xs">Delete</button></td>
+            <td><button onClick={()=>handleDelete(part._id)} class="btn btn-xs btn-error">Delete</button></td>
         </tr>
     );
 };

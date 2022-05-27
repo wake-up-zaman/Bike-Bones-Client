@@ -21,6 +21,7 @@ import ManageOrders from './Pages/Dashboard/ManageOrders';
 import RequireAdmin from './Pages/Authentication/RequireAdmin';
 import PageNotFound from './Pages/Shared/PageNotFound/PageNotFound';
 import Payment from './Pages/Dashboard/Payment';
+import WelcomePage from './Pages/Dashboard/WelcomePage';
 
 function App() {
   return (
@@ -45,7 +46,8 @@ function App() {
             <Dashboard></Dashboard>
           </RequireAuth>
         }>
-          <Route index element={<MyOrders></MyOrders>}></Route>
+          <Route index element={<WelcomePage></WelcomePage>}></Route>
+          <Route path='myOrders' element={<MyOrders></MyOrders>}></Route>
           <Route path="addReview" element={<AddReview></AddReview>}></Route>
           <Route path="myProfile" element={<MyProfile></MyProfile>}></Route>
           <Route path="payment/:id" element={<Payment></Payment>}></Route>
