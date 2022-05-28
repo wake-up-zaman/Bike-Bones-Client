@@ -11,7 +11,7 @@ const stripePromise = loadStripe('pk_test_51L3gyJLDZEIIquK1KUKYFHAFY2FsrK2IueqkP
 
 const Payment = () => {
     const { id } = useParams();
-    const url = `http://localhost:5000/purchaseTt/${id}`;
+    const url = `https://desolate-stream-53633.herokuapp.com/purchaseTt/${id}`;
     const { data: purchase, isLoading } = useQuery(['purchase', id], () => fetch(url, {
         method: 'GET',
         headers: {

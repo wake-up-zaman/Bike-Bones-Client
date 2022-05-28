@@ -33,7 +33,7 @@ const AddProduct = () => {
                     overview:data.over
                 }
                 //send to my database
-                fetch('http://localhost:5000/parts', {
+                fetch('https://desolate-stream-53633.herokuapp.com/parts', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',

@@ -13,7 +13,7 @@ const Purchase = () =>{
     const [user, loading, error] = useAuthState(auth);
 
     useEffect(() => {
-        const url = `http://localhost:5000/part/${_id}`;
+        const url = `https://desolate-stream-53633.herokuapp.com/part/${_id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setPart(data))
@@ -34,7 +34,7 @@ const Purchase = () =>{
             address:event.target.address.value
         }
 
-        fetch('http://localhost:5000/purchase', {
+        fetch('https://desolate-stream-53633.herokuapp.com/purchase', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

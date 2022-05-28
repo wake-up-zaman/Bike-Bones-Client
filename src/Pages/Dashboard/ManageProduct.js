@@ -1,43 +1,22 @@
 import React, { useEffect, useState } from 'react';
+import { useQuery } from 'react-query';
+import Loading from '../Shared/Loading/Loading';
+import ConfirmationModal from './ConfirmationModal';
 import Product from './Product';
 const Swal = require('sweetalert2')
 const ManageProduct = () => {
-  const [parts, setParts] = useState([]);
-  useEffect(() => {
-    fetch('http://localhost:5000/parts')
-      .then(res => res.json())
-      .then(data => setParts(data));
-  }, [])
+  const [deletePart, setDeletePart] = useState(null);
 
-  const handleDelete = id => {
-    const proceed=Swal.fire({
-      title: 'Are you sure?',
-      text: "You won't be able to revert this!",
-      icon: 'warning',
-      showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      confirmButtonText: 'Yes, delete it!'
-    })
-    if(proceed){
-    const url = `http://localhost:5000/parts/${id}`;
-    fetch(url, {
-      method: 'DELETE'
-    })
-      .then((result) => {   
-        // if (result) {
-        //   Swal.fire(
-        //     'Deleted!',
-        //     'Your file has been deleted.',
-        //     'success'
-        //   )
-        // }   
-        const remaining = parts.filter(part => part._id !== id);
-        setParts(remaining);
+  const { data: parts, isLoading, refetch } = useQuery('parts', () => fetch('https://desolate-stream-53633.herokuapp.com/parts', {
+    headers: {
+      authorization: `Bearer ${localStorage.getItem('accessToken')}`
+    }
+  }).then(res => res.json()));
 
-      })
+  if (isLoading) {
+    return <Loading></Loading>
   }
-}
+
 
   return (
     <div>
@@ -62,7 +41,7 @@ const ManageProduct = () => {
                     key={part._id}
                     part={part}
                     index={index}
-                    handleDelete={handleDelete}
+                    setDeletePart={setDeletePart}
                   >
                   </Product>
                 )
@@ -71,6 +50,11 @@ const ManageProduct = () => {
           </table>
         </div>
       </div>
+      {deletePart && <ConfirmationModal
+        deletePart={deletePart}
+        refetch={refetch}
+        setDeletePart={setDeletePart}
+        ></ConfirmationModal>}
     </div>
   );
 };

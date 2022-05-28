@@ -18,7 +18,7 @@ const MyProfile = () => {
             bike:event.target.bike.value
         }
 
-        fetch(`http://localhost:5000/myProfile`, {
+        fetch(`https://desolate-stream-53633.herokuapp.com/myProfile`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
