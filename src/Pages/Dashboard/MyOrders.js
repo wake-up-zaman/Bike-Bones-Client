@@ -10,58 +10,19 @@ import Loading from '../Shared/Loading/Loading';
 import MyOrder from './MyOrder';
 import ModalOfConfirm from './ModalOfConfirm';
 
-
 const MyOrders = () => {
-//     const [user, loading, error] = useAuthState(auth);
-//     const [orders,setOrders]=useState([]);
-//     useEffect(()=>{
-//         if(user){
-//             fetch(`https://desolate-stream-53633.herokuapp.com/purchase?email=${user.email}`,{
-//                 method: 'GET',
-//                 headers: {
-//                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
-//                 }
-//             })
-//             .then(res => {
-//                 console.log('res', res);
-//                 if (res.status === 401 || res.status === 403) {
-//                     signOut(auth);
-//                     localStorage.removeItem('accessToken');
-//                     Navigate('/');
-//                 }
-//                 return res.json()
-//             })
-//             .then(data => {
 
-//                 setOrders(data);
-//             });
-//     }
-// }, [user])
+    const [deleteOrder, setDeleteOrder] = useState(null)
+    const [user, loading, error] = useAuthState(auth);
+    const { data: Morders, isLoading, refetch } = useQuery('parts', () => fetch(`https://desolate-stream-53633.herokuapp.com/purchase?email=${user.email}`, {
+        headers: {
+            authorization: `Bearer ${localStorage.getItem('accessToken')}`
+        }
+    }).then(res => res.json()));
 
-
-    // const proceed = Swal.fire({
-    //     title: 'Are you sure to Cancel?',
-    //     text: "You won't be able to revert this!",
-    //     icon: 'warning',
-    //     showCancelButton: true,
-    //     confirmButtonColor: '#3085d6',
-    //     cancelButtonColor: '#d33',
-    //     confirmButtonText: 'Yes, delete it!'
-    // })
-    // if (proceed) {
-
-
-const [deleteOrder,setDeleteOrder]=useState(null)
-const [user, loading, error] = useAuthState(auth);
-const { data: Morders, isLoading, refetch } = useQuery('parts', () => fetch(`https://desolate-stream-53633.herokuapp.com/purchase?email=${user.email}`, {
-    headers: {
-      authorization: `Bearer ${localStorage.getItem('accessToken')}`
+    if (isLoading) {
+        return <Loading></Loading>
     }
-  }).then(res => res.json()));
-
-  if (isLoading) {
-    return <Loading></Loading>
-  }
 
     return (
         <div className='text-center lg:text-left'>
@@ -77,19 +38,19 @@ const { data: Morders, isLoading, refetch } = useQuery('parts', () => fetch(`htt
                             <th>Transaction Id</th>
                             <th>Payment Status</th>
                             <th>Remove Item</th>
-                            
+
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            Morders.map((order,index)=>
-                            <MyOrder             
-                            key={order.key}
-                            order={order}
-                            index={index}
-                            setDeleteOrder={setDeleteOrder}     
-                            >
-                            </MyOrder>
+                            Morders.map((order, index) =>
+                                <MyOrder
+                                    key={order.key}
+                                    order={order}
+                                    index={index}
+                                    setDeleteOrder={setDeleteOrder}
+                                >
+                                </MyOrder>
                             )
                         }
                     </tbody>
@@ -97,9 +58,9 @@ const { data: Morders, isLoading, refetch } = useQuery('parts', () => fetch(`htt
             </div>
             {
                 deleteOrder && <ModalOfConfirm
-                deleteOrder={deleteOrder}
-                refetch={refetch}
-                setDeleteOrder={setDeleteOrder} 
+                    deleteOrder={deleteOrder}
+                    refetch={refetch}
+                    setDeleteOrder={setDeleteOrder}
                 >
 
                 </ModalOfConfirm>

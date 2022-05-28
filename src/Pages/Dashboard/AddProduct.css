@@ -7,3 +7,12 @@
     margin-bottom: 30px;
     padding-top: 10px;
 }
+
+@media only screen and (max-width:576px) {
+
+    .addPro{
+        margin-left: 10px;
+        width:350px;
+    }
+
+}

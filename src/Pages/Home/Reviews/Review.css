@@ -1,5 +1,35 @@
-.icon2{
-    font-size: 48px;
-    margin-right: 20px;
+.icon2 {
+  font-size: 68px;
+  margin-left: 120px;
+  margin-bottom: 10px;
 
+}
+
+.review {
+  background-color: white;
+}
+
+.faka {
+  color: rgb(177, 158, 158);
+  font-size: 25px;
+}
+
+.block {
+  color: rgb(255, 240, 25);
+  font-size: 25px;
+}
+
+.des {
+  height: 150px;
+}
+
+.tt {
+  border-radius: 50px;
+}
+
+@media only screen and (max-width:576px) {
+  .rat {
+    margin-left: 100px;
   }
+
+}

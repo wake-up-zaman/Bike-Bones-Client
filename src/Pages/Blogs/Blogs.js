@@ -4,12 +4,12 @@ const Blogs = () => {
     return (
         <div>
             <div>
-                <h2 className='text-center text-3xl font-bold mb-8 mt-16'>Conceptual Question And Answer</h2>
+                <h2 className='text-center text-3xl font-bold mb-8 mt-8'>Conceptual Question And Answer</h2>
             </div>
             <div className='blog'>
 
                 <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3">
-                    <div class="collapse-title text-xl font-medium bg-cyan-200">
+                    <div class="collapse-title text-xl font-medium ">
                         How will you improve the performance of a React Application?
                     </div>
                     <div class="collapse-content ">
@@ -42,7 +42,7 @@ const Blogs = () => {
                     </div>
                 </div>
                 <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3">
-                    <div class="collapse-title text-xl font-medium bg-cyan-200">
+                    <div class="collapse-title text-xl font-medium ">
                         How does prototypical inheritance work?
                     </div>
                     <div class="collapse-content ">
@@ -65,7 +65,7 @@ const Blogs = () => {
                     </div>
                 </div>
                 <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box mb-3">
-                    <div class="collapse-title text-xl font-medium bg-cyan-200">
+                    <div class="collapse-title text-xl font-medium ">
                         What is a unit test? Why should write unit tests?
                     </div>
                     <div class="collapse-content ">

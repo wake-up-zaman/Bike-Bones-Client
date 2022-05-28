@@ -37,14 +37,14 @@ const MyProfile = () => {
         }
     return (
         <div>
-            <div className='flex ff'>
-                <div class='icon2'><FaUserCircle /></div>
+            <div className='flex myProfile'>
+                <div class='icon'><FaUserCircle /></div>
                 <div>
                     <h2 className='text-2xl text-bold'>{user.displayName}</h2>
                     <h2 className='text-xl text-bold'>{user.email}</h2>
                 </div>
             </div>
-            <div className='ml-48  mt-2 flex align-items-center'>
+            <div className='lg:ml-48  mt-2 flex align-items-center'>
 
                 <form onSubmit={handleBooking} className='profile review mt-2 form'>
                     <h2 className=' mb-4 text-3xl  text-primary text-center text-bold'>Complete/Update Profile</h2>

@@ -20,7 +20,7 @@ const Part = ({ part }) => {
                     <p className="text-center">{part.description3}.</p>
                 </div>
                 <div className="flex text-xl  justify-between ml-3 mr-3 my-5">
-                    <p className="order text-accent ">Min Order:{part.minimum_order}</p>
+                    <p className="order text-primary">Min Order:{part.minimum_order}</p>
                     <p className="order text-accent ">Available:{part.available_product}</p>
                 </div>
                 <p className="text-center  font-bold  text-2xl ">Price:${part.price}</p>

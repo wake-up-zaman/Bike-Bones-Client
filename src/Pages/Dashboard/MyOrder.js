@@ -17,7 +17,7 @@ const MyOrder = ({order,index,setDeleteOrder}) => {
                 </td>
                 <td>
                     <td>
-                        {(order.price && !order.paid) && <label onClick={()=>setDeleteOrder(order)} for="my-modal-6" class="btn btn-xs modal-button">Cancel</label>}
+                        {(order.price && !order.paid) && <label onClick={()=>setDeleteOrder(order)} for="my-modal-6" class="btn btn-xs btn-error modal-button">Remove</label>}
                         {(order.price && order.paid) && <span className='text-success'></span>}
 
                     </td>

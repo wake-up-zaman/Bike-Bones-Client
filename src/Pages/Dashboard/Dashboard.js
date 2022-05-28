@@ -15,7 +15,7 @@ const Dashboard = () => {
         <input id="dashboard-sidebar" type="checkbox" class="drawer-toggle" />
         
         <div class="drawer-content ">
-            <label for="dashboard-sidebar" class="btn btn-primary drawer-button lg:hidden ml-40">Open</label>
+            <label for="dashboard-sidebar" class="btn btn-primary drawer-button lg:hidden ml-32">Open Board</label>
             <Outlet > </Outlet>
         </div>
         <div class="drawer-side">
@@ -25,10 +25,10 @@ const Dashboard = () => {
                { !admin &&  <li><Link to='/dashboard/myOrders'>My Orders</Link></li>}
                { !admin && <li><Link to='/dashboard/AddReview'>Add Review</Link></li>}
                 <li><Link to='/dashboard/myProfile'>My Profile</Link></li>
-                { admin && <li><Link to='/dashboard/manageOrders'>Manage Orders</Link></li>}
                 { admin && <li><Link to='/dashboard/makeAdmin'>Make Admin</Link></li>}
                 { admin && <li><Link to='/dashboard/addProduct'>Add Product</Link></li>}
                 { admin &&  <li><Link to='/dashboard/manageProducts'>Manage Products</Link></li>}
+                { admin && <li><Link to='/dashboard/manageOrders'>Manage All Orders</Link></li>}
             </ul>
         </div>
     </div>

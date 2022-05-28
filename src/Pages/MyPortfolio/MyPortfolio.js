@@ -18,7 +18,7 @@ const MyPortfolio = () => {
             <div>
                 <div>
                     <h2 className='mt-16 text-center text-3xl font-bold text-primary mb-8'>Educational Background</h2>
-                    <div className=' grid grid-cols-1 lg:grid-cols-3 gap-5 ml-8'>
+                    <div className=' grid grid-cols-1 lg:grid-cols-3 gap-5 lg:ml-8'>
                         <div class="card w-full-lg shadow-xl">
                             <div class="card-body bg-slate-400">
                                 <h2 class="card-title text-2xl">Secondary School Certificate</h2>
@@ -35,7 +35,7 @@ const MyPortfolio = () => {
                                 <p className='text-xl border-3 rounded-lg '>GPA: 5.00 </p>
                             </div>
                         </div>
-                        <div class="card  w-full-lg bg-base-100 shadow-xl mr-8">
+                        <div class="card  w-full-lg bg-base-100 shadow-xl lg:mr-8">
                             <div class="card-body bg-slate-400">
                                 <h2 class="card-title text-2xl">Bachelor of Science</h2>
                                 <p className='text-xl border-3 rounded-lg bg-zinc-100'>Bangladesh University of Professionals</p>
@@ -89,21 +89,21 @@ const MyPortfolio = () => {
                 <div>
                 <div className='mb-16'>
                     <h2 className='mt-16 text-center text-3xl font-bold text-primary mb-8'>Projects</h2>
-                    <div className=' grid grid-cols-1 lg:grid-cols-3 gap-5 ml-8'>
+                    <div className=' grid grid-cols-1 lg:grid-cols-3 gap-5 lg:ml-8'>
                         <div class="card w-full-lg shadow-xl">
-                            <div class="card-body bg-teal-200">
+                            <div class="card-body bg-gradient-to-r from-secondary to-primary ">
                                 <h2 class=" text-2xl text-center font-bold">Tech Review</h2>
                                 <button class="btn btn-outline"><a href="https://glowing-jalebi-853180.netlify.app/">Visit Tech Review</a></button>
                             </div>
                         </div>
                         <div class="card w-full-lg bg-base-100 shadow-xl">
-                            <div class="card-body bg-teal-200">
+                            <div class="card-body bg-gradient-to-r from-cyan-500 to-blue-500">
                                 <h2 class=" text-2xl text-center font-bold">Xplore Wild</h2>
                                 <button class="btn btn-outline"> <a href="https://zaman-wild-life.web.app/">Visit Xplore Wild</a></button>
                             </div>
                         </div>
-                        <div class="card  w-full-lg bg-base-100 shadow-xl mr-8">
-                            <div class="card-body bg-teal-200">
+                        <div class="card  w-full-lg bg-base-100 shadow-xl lg:mr-8">
+                            <div class="card-body bg-gradient-to-r from-secondary to-primary">
                                 <h2 class=" text-2xl text-center font-bold">Rock Electronics</h2>
                                 <button class="btn btn-outline"><a href="https://warehouse-management-33fdd.web.app/">Visit Rock Electronics</a></button>
 

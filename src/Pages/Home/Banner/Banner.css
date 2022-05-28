@@ -1,6 +1,9 @@
 .banner-img{
-    width:1550PX;
+    width:1520PX;
     height: 750PX;
+}
+.banner-img-mobile{
+    display:none;
 }
 .banner-text{
     font-family: 'Franklin Gothic Medium';
@@ -32,5 +35,34 @@
     top:400px;
     left:50px;
     font-family: 'Dancing Script', cursive;
+
+}
+
+
+.bike{
+    margin-right:800px;
+}
+
+@media only screen and (max-width:576px) {
+    .banner-img{
+    display:none ;
+    }
+    .banner-img-mobile{
+        display: initial;
+        height: 200px;
+        width:390px;
+        position: absolute;
+        left: 0px;
+        top: 50px;
+    }
+    .banner-text-2{
+        display:none;
+    }
+    .bike{
+        display: absolute;
+        top:1000px;
+        margin-top:200px;
+        margin-left:70px;
+    }
 
 }

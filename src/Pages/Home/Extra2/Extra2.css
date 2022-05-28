@@ -1,5 +1,5 @@
 .extra-form{
-    margin-left: 350px;
+    margin-left: 320px;
     margin-top: 30px;
 
 }
@@ -11,7 +11,7 @@
     margin-bottom: 20px;
 }
 .extra2-main{
-    background-color: #C3E6F6;
+    background-color: #9eb8ce;
     padding: 40px;
     margin-bottom: 50px;
     margin-left: 200px;
@@ -22,8 +22,44 @@
     margin-top: 20px;
 }
 .COLOR1{
-    color: rgb(18, 8, 192);
+    color: rgb(217, 15, 15);
 }
 .COLOR3{
-    color: rgb(179, 15, 15);
+    color: rgb(238, 245, 245);
+    border-radius: 20px;
+    background-color: rgb(46, 161, 199);
+    height: 50px;
+    width:200px;
+    margin-left: 410px;
+}
+
+@media only screen and (max-width:576px) {
+    .extra-form{
+        margin-left: 0px;
+        margin-top: 20px;
+    
+    }
+    .input-form{
+        border: 1px solid black;
+        height: 60px;
+        border-radius: 30px;
+        width:300px;
+        margin-bottom: 20px;
+    }
+    .extra2-main{
+        background-color: #C3E6F6;
+        padding: 40px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-radius: 50px;
+    }
+    .COLOR3{
+        color: rgb(238, 245, 245);
+        border-radius: 20px;
+        background-color: rgb(46, 161, 199);
+        height: 50px;
+        width:200px;
+        margin-left: 50px;
+    }
 }

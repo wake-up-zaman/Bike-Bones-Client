@@ -5,12 +5,12 @@
     margin-top: 20px;
 }
 .extra{
-    background-color: rgb(185, 197, 193);
+    background-color: rgb(237, 231, 231);
     padding: 30px;
 }
 .extra-below1{
     width:400px;
-    border: 1px solid white;
+    border: 1px solid rgb(46, 40, 40);
     margin-top: 30px;
     margin-left:100px;
     padding: 15px;
@@ -20,7 +20,7 @@
 }
 .extra-below2{
     width:400px;
-    border: 1px solid white;
+    border: 1px solid rgb(46, 40, 40);
     margin-top: 30px;
     margin-left:50px;
     padding: 15px;
@@ -30,7 +30,7 @@
 }
 .extra-below3{
     width:400px;
-    border: 1px solid white;
+    border: 1px solid rgb(46, 40, 40);
     margin-top: 30px;
     margin-left:50px;
     padding: 15px;
@@ -51,15 +51,15 @@
         display: none;
     }
     .extra-below1{
-        margin-left:0px;
+        margin-left:10px;
         width:300px;
     }
     .extra-below2{
-        margin-left:0px;
+        margin-left:10px;
         width:300px;
     }
     .extra-below3{
-        margin-left:0px;
+        margin-left:10px;
         width:300px;
     }
     .extra-logo{
