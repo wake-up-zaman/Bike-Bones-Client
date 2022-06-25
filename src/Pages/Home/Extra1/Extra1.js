@@ -3,12 +3,12 @@ import './Extra1.css';
 import {FaShippingFast,FaHandshake,FaStar} from "react-icons/fa";
 const Extra1 = () => {
     return (
-        <div className='extra mb-16 '>
+        <div className='extra mb-16'>
             <div>
-                <h2 className='text-center text-3xl text-bold'>Why Choose Us?</h2>
+                <h2 className='text-center mt-12 mb-4 text-4xl text-dark text-bold'>Why Choose Us?</h2>
             </div>
-            <div className='text-center extra-text'>
-                <p>We’ve been Selling Genuine Motorcycle Parts and Accessories for the last 3 years. We present The Best Shopping site to Buy Motorcycle Parts online in Bangladesh. If you choose our website for Buy Motorcycle Parts you not mistaken, and we always treat customers with respect.</p>
+            <div className='extra-text text-center'>
+                <p className='extra_text'>We’ve been Selling Genuine Motorcycle Parts and Accessories for the last 3 years. We present The Best Shopping site to Buy Motorcycle Parts online in Bangladesh. If you  choose  our  website for Buy Motorcycle Parts you not mistaken, and we always treat customers with respect.</p>
             </div>
             <div className='flex mb-8 extra-below'>
                 <div className='extra-below1'>

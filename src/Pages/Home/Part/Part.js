@@ -14,7 +14,7 @@ const Part = ({ part }) => {
                 <h2 className="text-primary text-2xl font-bold uppercase text-center">{part.name}</h2>
 
 
-                <div className="h-24 sm:mb-1.5">
+                <div className="h-18 sm:mb-1.5">
                    <p className="text-center">{part.description1},</p>
                     <p className="text-center">{part.description2},</p>
                     <p className="text-center">{part.description3}.</p>

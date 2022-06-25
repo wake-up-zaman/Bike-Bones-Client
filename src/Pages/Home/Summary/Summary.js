@@ -3,9 +3,9 @@ import './Summary.css';
 import {FaChartLine, FaCommentAlt, FaCode, FaUserFriends } from "react-icons/fa";
 const Summary = () => {
     return (
-        <div>
-            <div>
-                <h2 className='text-center text-3xl font-bold mb-12'>Millions Business Trust Us</h2>
+        <div className='summary'>
+            <div className='pt-12'>
+                <h2 className='text-center text-3xl font-bold'>Millions Business Trust Us</h2>
             </div>
             <div className='counter-up'>
 

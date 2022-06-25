@@ -1,35 +1,131 @@
-.icon2 {
-  font-size: 68px;
-  margin-left: 120px;
+ .faka {
+  color: rgb(193, 182, 182);
+
+}
+
+#testimonials{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.testimonial-heading{
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-heading h1{
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #060505;
+  padding: 10px 20px;
+}
+
+.testimonial-heading span{
+  font-size: 1.3rem;
+  color: #252525;
   margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.profile-img{
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
 
 }
-
-.review {
-  background-color: white;
+.img{
+  width:100%;
+  height:100%;
 }
 
-.faka {
-  color: rgb(177, 158, 158);
-  font-size: 25px;
+.profile2{
+  display: flex;
+}
+.name-user{
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-box-container{
+
+  background-color: #EEEEEE;
+  color: #000000;
+  padding: 20px;
+  margin: 5px 5px;
+  margin-bottom: 50px;
+}
+.reviews{
+  margin-left: 30px;
+  color: #f9d71c;
+}
+/* .testimonial-box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.testimonial-box{
+  box-shadow: 2px 2px  30px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 5px 5px;
+
+}
+.profile-img{
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+
+}
+.profile-img .img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position: center;
+}
+.profile{
+  display: flex;
+
+  padding: none;
+
+}
+.name-user{
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong{
+  color: #3d3d3d;
+  font-size:1.1rem;
+  letter-spacing: 0.5px;
+}
+.name-user span{
+  color:#979797;
+  font-size:0.8rem;
+
+}
+.reviews{
+  color: #f9d71c;
+}
+.box-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
-.block {
-  color: rgb(255, 240, 25);
-  font-size: 25px;
-}
-
-.des {
-  height: 150px;
-}
-
-.tt {
-  border-radius: 50px;
-}
-
-@media only screen and (max-width:576px) {
-  .rat {
-    margin-left: 100px;
-  }
-
-}
+.client-comment p{
+  font-size: 0.9rem;
+  color:#4b4b4b;
+} */
