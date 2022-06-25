@@ -76,7 +76,7 @@ const Purchase = () =>{
 
             </div>
             <div className='shop'>
-                <h2 className='text-center text-3xl text-bold'>Add To Cart</h2>
+                <h2 className='text-center text-3xl text-bold'>Add to Cart</h2>
                 <form onSubmit={handleProfile} className='mt-3 form'>
                 <label className="label">
                     <span className="label-text">Parts Quantity</span>
