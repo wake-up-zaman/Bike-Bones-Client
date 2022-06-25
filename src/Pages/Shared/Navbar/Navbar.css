@@ -4,6 +4,10 @@
 .iconNav{
     font-size:40px;
 }
+.nav_color{
+    background-color: #202021;
+    color: rgb(246, 248, 249);
+}
 @media only screen and (max-width:576px) {
     .title-mobile{
     margin-left: 50px ;

@@ -10,38 +10,17 @@
 
 }
 
-.banner-text-1{
-    font-size: 60px;
-    color: aliceblue;
-    position: absolute;
-    top:300px;
-    left:50px;
-
-
-}
 .banner-text-2{
     font-size: 60px;
-    color: aliceblue;
+    color: rgb(12, 16, 19);
     position: absolute;
-    top:300px;
-    left:50px;
-    font-family: 'Dancing Script', cursive;
-
-}
-.banner-text-3{
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top:400px;
-    left:50px;
+    top:120px;
+    left:400px;
     font-family: 'Dancing Script', cursive;
 
 }
 
 
-.bike{
-    margin-right:800px;
-}
 
 @media only screen and (max-width:576px) {
     .banner-img{
@@ -58,11 +37,6 @@
     .banner-text-2{
         display:none;
     }
-    .bike{
-        display: absolute;
-        top:1000px;
-        margin-top:200px;
-        margin-left:70px;
-    }
+
 
 }

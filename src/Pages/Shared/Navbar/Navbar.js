@@ -23,7 +23,7 @@ const Navbar = () => {
         { user ?<li><span onClick={logout}><Link to='/'>Sign Out</Link></span><div class='iconNav'><FaUserCircle /></div><div>{user.displayName}</div> </li> :<li><Link to='/login'>Login</Link></li>}
     </>
     return (
-        <div className="navbar bg-base-100 ">
+        <div className="navbar nav_color">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex="0" className="btn btn-ghost lg:hidden">
