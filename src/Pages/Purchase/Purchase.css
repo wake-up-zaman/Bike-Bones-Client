@@ -34,3 +34,31 @@
     margin-top:100px;
     margin-left:100px;
 }
+@media only screen and (max-width:576px) {
+    .detail{
+        margin: 10px;
+        border:1px solid rgb(90, 84, 84);
+        border-radius: 15px;
+        padding:15px;
+        margin-right: 20px;
+    }
+    .imgp{
+        margin: 10px;
+        border-radius: 40px;
+        width:300px;
+        height:400px;
+    }
+    .kkl{
+        margin-top:20px;
+        margin-left:0px;
+    }
+    .shop{
+        width:370px;
+        border:1px solid rgb(90, 84, 84);
+        border-radius: 15px;
+        padding:15px;
+        margin-right: 50px;
+    
+    }
+
+}

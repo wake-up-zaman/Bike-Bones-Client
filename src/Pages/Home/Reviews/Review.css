@@ -2,6 +2,9 @@
   color: rgb(193, 182, 182);
 
 }
+.review_main{
+  background-color: #EEEEEE;
+}
 
 #testimonials{
   display:flex;
@@ -55,7 +58,7 @@
 }
 .testimonial-box-container{
 
-  background-color: #EEEEEE;
+  background-color: #ffffff;
   color: #000000;
   padding: 20px;
   margin: 5px 5px;

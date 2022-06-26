@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Part from '../Part/Part';
+import '../Part/Part.css'
 
 
 const Parts = () => {
@@ -10,7 +11,7 @@ const Parts = () => {
             .then(data => setParts(data));
     }, [])
     return (
-        <div className='my-16'>
+        <div className='my-16 parts_main'>
             <div className='text-center '>
                 <h3 className='text-accent text-3xl my-8 font-bold uppercase'>Motor Bike Parts</h3>
             </div>

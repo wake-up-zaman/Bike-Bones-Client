@@ -10,7 +10,7 @@ const Reviews = () => {
             .then(data => setReviews(data));
     }, [])
     return (
-        <div className='my-16'>
+        <div className='my-16 review_main'>
             <section id='testimonials'>
                 <div className='testimonial-heading'>
                     <h1>Customer Reviews</h1>

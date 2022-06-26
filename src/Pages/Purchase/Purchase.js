@@ -54,9 +54,9 @@ const Purchase = () =>{
 
         
     return (
-        <div className='flex mb-8'>
+        <div className='flex flex-col lg:flex-row mb-8'>
             <div className='detail'>
-                <div className='flex mb-8'>
+                <div className='flex flex-col lg:flex-row mb-8'>
                     <div><img src={part.Img} alt='' class="max-w-sm  shadow-2xl imgp border-2 rounded-lg" /></div>
                     <div className='kkl'>
                         <h1 class="text-5xl font-bold mb-2 text-center">{part.name}</h1>
