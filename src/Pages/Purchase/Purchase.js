@@ -99,7 +99,8 @@ const Purchase = () =>{
                     name='quantity' 
                     placeholder='Parts Quantity' 
                     required
-                    onChange={event => setNumber(event.target.value)} />
+                    onChange={event => setNumber(event.target.value)}
+                    value={Number} />
                     <label className="label">
                     <span className="label-text">Name</span>
                 </label>
@@ -109,7 +110,8 @@ const Purchase = () =>{
                     disabled 
                     value={user?.displayName || ''} 
                     className="input input-bordered w-full max-w-xs mb-2"
-                    onChange={event => setName(event.target.value)} />
+                    
+                    />
                     <label className="label">
                     <span className="label-text">Email</span>
                 </label>
@@ -118,7 +120,7 @@ const Purchase = () =>{
                     name="email" 
                     disabled value={user?.email || ''} 
                     className="input input-bordered w-full max-w-xs  mb-2"
-                    onChange={event => setEmail(event.target.value)} />
+                     />
                     <label className="label">
                     <span className="label-text">Phone</span>
                 </label>
@@ -127,7 +129,8 @@ const Purchase = () =>{
                     name="phone" 
                     placeholder="Phone Number" 
                     className="input input-bordered w-full max-w-xs  mb-2"
-                    onChange={event => setPhone(event.target.value)} />
+                    onChange={event => setPhone(event.target.value)}
+                    value={Phone} />
                     <label className="label">
                     <span className="label-text">Address</span>
                 </label>
@@ -136,7 +139,8 @@ const Purchase = () =>{
                     name="address" 
                     placeholder="Address" 
                     className="input input-bordered w-full max-w-xs  mb-2"
-                    onChange={event => setAddress(event.target.value)} />
+                    onChange={event => setAddress(event.target.value)}
+                    value={Address} />
                     <input type="submit" value="Purchase" className="btn btn-secondary w-full max-w-xs" />
                 </form>
             </div>
