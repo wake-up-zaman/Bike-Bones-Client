@@ -5,8 +5,9 @@
     font-size:40px;
 }
 .nav_color{
-    background-color: #202021;
-    color: rgb(246, 248, 249);
+    background-color:  #ffffff;
+    color: black;
+    font-weight: bold;
 }
 @media only screen and (max-width:576px) {
     .title-mobile{

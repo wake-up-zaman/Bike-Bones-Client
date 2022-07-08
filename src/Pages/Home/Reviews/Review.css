@@ -3,7 +3,7 @@
 
 }
 .review_main{
-  background-color: #EEEEEE;
+  background-color:#F6F9FF;;
 }
 
 #testimonials{
@@ -58,11 +58,12 @@
 }
 .testimonial-box-container{
 
-  background-color: #ffffff;
+  background-color:  #ffffff;
   color: #000000;
   padding: 20px;
   margin: 5px 5px;
   margin-bottom: 50px;
+  border-radius: 20px;
 }
 .reviews{
   margin-left: 30px;

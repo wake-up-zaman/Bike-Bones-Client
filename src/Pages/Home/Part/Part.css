@@ -11,12 +11,9 @@
 .part{
     width:400px;
     height:570px;
-    /* background-color: #C7D9E5; */
-    /* background-color: #C6C7C9; */
-    background-color: rgb(223, 237, 241);
-
+    background-color: #E1E5E8;
     margin-bottom: 20px;
-    border: 1px solid rgb(169, 164, 164);
+
 
 }
 .part_button{
@@ -33,11 +30,15 @@
 
 
 }
+.button-ets{
+    color: #ffffff;
+    background-color: #2EA1C7;
+}
 .part_price{
     color: rgb(34, 36, 42);
     font-weight: bold;
 }
-.part_button:hover{
+/* .part_button:hover{
     background-color: #19D2AD;
     color: rgb(7, 9, 10);
     width: 200px;
@@ -49,4 +50,4 @@
     border-radius: 10px;
 
 
-}
+} */

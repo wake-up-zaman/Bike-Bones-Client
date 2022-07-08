@@ -3,7 +3,7 @@ import './Extra1.css';
 import {FaShippingFast,FaHandshake,FaStar} from "react-icons/fa";
 const Extra1 = () => {
     return (
-        <div className='extra mb-16'>
+        <div className='extra'>
             <div>
                 <h2 className='text-center mt-12 mb-4 text-4xl text-dark text-bold'>Why Choose Us?</h2>
             </div>

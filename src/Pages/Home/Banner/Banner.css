@@ -2,6 +2,9 @@
     width:1520PX;
     height: 750PX;
 }
+.banner-back{
+    background-color:  #E1E5E8;
+}
 .banner-img-mobile{
     display:none;
 }
@@ -9,15 +12,38 @@
     font-family: 'Franklin Gothic Medium';
 
 }
+.banner-text-1{
+    font-size: 60px;
+    color: aliceblue;
+    position: absolute;
+    top:300px;
+    left:50px;
 
+
+}
 .banner-text-2{
     font-size: 60px;
+    color: aliceblue;
+    position: absolute;
+    top:300px;
+    left:50px;
+    font-family: 'Dancing Script', cursive;
+
+}
+.banner-text-3{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
     color: rgb(12, 16, 19);
     position: absolute;
+    top:400px;
+    left:50px;
     top:120px;
     left:400px;
     font-family: 'Dancing Script', cursive;
 
+}
+.bike{
+    margin-right:800px;
 }
 
 
@@ -26,17 +52,11 @@
     .banner-img{
     display:none ;
     }
-    .banner-img-mobile{
-        display: initial;
-        height: 200px;
-        width:390px;
-        position: absolute;
-        left: 0px;
-        top: 50px;
+    .bike{
+        display: absolute;
+        top:1000px;
+        margin-top:200px;
+        margin-left:70px;
     }
-    .banner-text-2{
-        display:none;
-    }
-
 
 }

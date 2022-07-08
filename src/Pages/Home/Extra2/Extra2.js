@@ -2,7 +2,7 @@ import React from 'react';
 import './Extra2.css'
 const Extra2 = () => {
     return (
-        <div className='extra2-main'>
+        <div className='extra2-main my-16'>
              <div className='extra2-banner'>
                  <h2 className='text-3xl text-center COLOR1'>More Products Coming Soon</h2>
                  <h2 className='text-3xl text-center'>News Letter</h2>

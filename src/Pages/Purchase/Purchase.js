@@ -11,6 +11,11 @@ const Purchase = () =>{
     const [part, setPart] = useState({});
     const {name,Img,price}=part;
     const [user, loading, error] = useAuthState(auth);
+    const [Number,setNumber]=useState('');
+    const [Name,setName]=useState('');
+    const [Phone,setPhone]=useState('');
+    const [Address,setAddress]=useState('');
+    const [Email,setEmail]=useState('');
 
     useEffect(() => {
         const url = `https://desolate-stream-53633.herokuapp.com/part/${_id}`;
@@ -22,6 +27,11 @@ const Purchase = () =>{
 
     const handleProfile = event => {
         event.preventDefault();
+        setNumber('');
+        setName('');
+        setPhone('');
+        setAddress('');
+        setEmail('');
         const purchase = {
             id: _id,
             pname: name,
@@ -33,6 +43,7 @@ const Purchase = () =>{
             phone: event.target.phone.value,
             address:event.target.address.value
         }
+        
 
         fetch('https://desolate-stream-53633.herokuapp.com/purchase', {
             method: 'POST',
@@ -45,6 +56,7 @@ const Purchase = () =>{
             .then(result => {
                 if(result){
                     toast.success("Purchase Successful !");
+
                 }
                 else{
                     toast.error("Purchase not Successful !");
@@ -81,23 +93,50 @@ const Purchase = () =>{
                 <label className="label">
                     <span className="label-text">Parts Quantity</span>
                 </label>
-                    <input className='mb-3 border-2 rounded-lg input-quantity h-12' type='number' name='quantity' placeholder='Parts Quantity' required />
+                    <input 
+                    className='mb-3 border-2 rounded-lg input-quantity h-12' 
+                    type='number' 
+                    name='quantity' 
+                    placeholder='Parts Quantity' 
+                    required
+                    onChange={event => setNumber(event.target.value)} />
                     <label className="label">
                     <span className="label-text">Name</span>
                 </label>
-                    <input type="text" name="name"  disabled value={user?.displayName || ''} className="input input-bordered w-full max-w-xs mb-2" />
+                    <input 
+                    type="text" 
+                    name="name"  
+                    disabled 
+                    value={user?.displayName || ''} 
+                    className="input input-bordered w-full max-w-xs mb-2"
+                    onChange={event => setName(event.target.value)} />
                     <label className="label">
                     <span className="label-text">Email</span>
                 </label>
-                    <input type="email" name="email" disabled value={user?.email || ''} className="input input-bordered w-full max-w-xs  mb-2" />
+                    <input 
+                    type="email" 
+                    name="email" 
+                    disabled value={user?.email || ''} 
+                    className="input input-bordered w-full max-w-xs  mb-2"
+                    onChange={event => setEmail(event.target.value)} />
                     <label className="label">
                     <span className="label-text">Phone</span>
                 </label>
-                    <input type="text" name="phone" placeholder="Phone Number" className="input input-bordered w-full max-w-xs  mb-2" />
+                    <input 
+                    type="text" 
+                    name="phone" 
+                    placeholder="Phone Number" 
+                    className="input input-bordered w-full max-w-xs  mb-2"
+                    onChange={event => setPhone(event.target.value)} />
                     <label className="label">
                     <span className="label-text">Address</span>
                 </label>
-                    <input type="text" name="address" placeholder="Address" className="input input-bordered w-full max-w-xs  mb-2" />
+                    <input 
+                    type="text" 
+                    name="address" 
+                    placeholder="Address" 
+                    className="input input-bordered w-full max-w-xs  mb-2"
+                    onChange={event => setAddress(event.target.value)} />
                     <input type="submit" value="Purchase" className="btn btn-secondary w-full max-w-xs" />
                 </form>
             </div>

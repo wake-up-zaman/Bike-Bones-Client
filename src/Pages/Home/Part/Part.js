@@ -11,7 +11,7 @@ const Part = ({ part }) => {
         <div className="card part shadow-xl">
             <div className="">
                 <figure><img className="h-72 w-full" src={part.Img} alt="" /></figure>
-                <h2 className="text-primary text-2xl font-bold uppercase text-center">{part.name}</h2>
+                <h2 className="text-2xl font-bold uppercase text-center">{part.name}</h2>
 
 
                 <div className="h-18 sm:mb-1.5">
@@ -28,7 +28,7 @@ const Part = ({ part }) => {
 
             </div>
 
-            <input onClick={()=>navigateToPurchase(_id)} type="submit" value="Buy Now" className="btn btn-primary text-white mt-5  mb-8" />
+            <input onClick={()=>navigateToPurchase(_id)} value="Buy Now" className="btn button-ets text-white mt-5  mb-8" />
 
         </div>
     );
