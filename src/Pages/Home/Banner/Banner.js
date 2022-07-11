@@ -9,11 +9,13 @@ const Banner = () => {
         <div className="hero banner-back">
             <div>
                 <img className='banner-img' src={banner} alt='' />
-                <img className='banner-img-mobile' src={ban6} alt='' />
+                <img className='banner-img-mobile' src={banner} alt='' />
             </div>
             <div className='banner-text'>
                 {/* <h2 className='banner-text-1'>Bike Bones Manufacturer</h2> */}
                 <h2 className='banner-text-2'>Custom Your MotorCycle with Us</h2>
+                <h2 className='banner-text-3'>Custom Your MotorCycle</h2>
+                <h2 className='banner-text-4'>with Us</h2>
                 <div class="form-control bike">
                     <div class="input-group">
                         <input type="text" placeholder="Search your desired Parts" class="input lg:w-72 input-bordered" />

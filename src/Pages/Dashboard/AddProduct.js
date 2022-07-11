@@ -28,9 +28,9 @@ const AddProduct = () => {
                     available_product: data.avail,
                     minimum_order: data.min,
                     Img: img,
-                    description1:data.fet,
-                    description2:data.fet,
-                    description3:data.fet,
+                    description1:data.fet1,
+                    description2:data.fet2,
+                    description3:data.fet3,
                     price:data.price,
                     overview:data.over
                 }

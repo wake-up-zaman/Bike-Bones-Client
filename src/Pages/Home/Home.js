@@ -6,11 +6,11 @@ import Reviews from './Reviews/Reviews';
 import { useQuery } from 'react-query';
 import Extra1 from './Extra1/Extra1';
 import Extra2 from './Extra2/Extra2';
-
+import './Home.css'
 
 const Home = () => {
     return (
-        <div>
+        <div className='home'>
             <Banner></Banner>
             <Parts></Parts>
             <Summary></Summary>
