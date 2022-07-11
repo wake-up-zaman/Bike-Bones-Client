@@ -29,6 +29,8 @@ const AddProduct = () => {
                     minimum_order: data.min,
                     Img: img,
                     description1:data.fet,
+                    description2:data.fet,
+                    description3:data.fet,
                     price:data.price,
                     overview:data.over
                 }
@@ -127,13 +129,13 @@ const AddProduct = () => {
                         </div>
                         <div className="form-control w-full max-w-xs">
                             <label className="label">
-                                <span className="label-text">Features</span>
+                                <span className="label-text">Description-1</span>
                             </label>
                             <input
                                 type="text"
                                 placeholder="description"
                                 className="input input-bordered w-full max-w-xs"
-                                {...register("fet", {
+                                {...register("fet1", {
                                     required: {
                                         value: true,
                                         message: 'description is required'
@@ -141,7 +143,47 @@ const AddProduct = () => {
                                 })}
                             />
                             <label className="label">
-                                {errors.fet?.type === 'required' && <span className="label-text-alt text-red-500">{errors.fet.message}</span>}
+                                {errors.fet1?.type === 'required' && <span className="label-text-alt text-red-500">{errors.fet1.message}</span>}
+                                
+                            </label>
+                        </div>
+                        <div className="form-control w-full max-w-xs">
+                            <label className="label">
+                                <span className="label-text">Description-2</span>
+                            </label>
+                            <input
+                                type="text"
+                                placeholder="description"
+                                className="input input-bordered w-full max-w-xs"
+                                {...register("fet2", {
+                                    required: {
+                                        value: true,
+                                        message: 'description is required'
+                                    }
+                                })}
+                            />
+                            <label className="label">
+                                {errors.fet2?.type === 'required' && <span className="label-text-alt text-red-500">{errors.fet2.message}</span>}
+                                
+                            </label>
+                        </div>
+                        <div className="form-control w-full max-w-xs">
+                            <label className="label">
+                                <span className="label-text">Description-3</span>
+                            </label>
+                            <input
+                                type="text"
+                                placeholder="description"
+                                className="input input-bordered w-full max-w-xs"
+                                {...register("fet3", {
+                                    required: {
+                                        value: true,
+                                        message: 'description is required'
+                                    }
+                                })}
+                            />
+                            <label className="label">
+                                {errors.fet3?.type === 'required' && <span className="label-text-alt text-red-500">{errors.fet3.message}</span>}
                                 
                             </label>
                         </div>
