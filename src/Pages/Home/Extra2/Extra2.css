@@ -1,5 +1,5 @@
 .extra-form{
-    margin-left: 320px;
+    margin-left: 550px;
     margin-top: 30px;
 
 }
@@ -13,10 +13,7 @@
 .extra2-main{
     background-color: #9eb8ce;
     padding: 40px;
-    margin-bottom: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
-    border-radius: 50px;
+
 
 }
 .extra2-banner{
@@ -31,7 +28,7 @@
     background-color: rgb(46, 161, 199);
     height: 50px;
     width:200px;
-    margin-left: 410px;
+    margin-left: 640px;
 }
 
 @media only screen and (max-width:576px) {
@@ -53,7 +50,6 @@
         margin-bottom: 50px;
         margin-left: 0px;
         margin-right: 0px;
-        border-radius: 50px;
     }
     .COLOR3{
         color: rgb(238, 245, 245);

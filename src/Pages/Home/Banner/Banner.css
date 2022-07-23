@@ -21,13 +21,21 @@
 
 
 }
+.banner-text-21{
+    font-size: 18px;
+    color: aliceblue;
+    position: absolute;
+    top:195px;
+    left:50px;
+    margin-bottom: 10px;
+}
 .banner-text-2{
     font-size: 60px;
     color: aliceblue;
     position: absolute;
-    top:300px;
+    top:200px;
     left:50px;
-    font-family: 'Dancing Script', cursive;
+    text-transform: capitalize;
 
 }
 .banner-text-3{
@@ -44,6 +52,7 @@
 }
 .bike{
     margin-right:800px;
+    margin-bottom: 80PX;
 }
 
 .banner-text-3{
@@ -60,8 +69,9 @@
     .bike{
         display: absolute;
         top:1000px;
-        margin-top:200px;
+        margin-top:10px;
         margin-left:70px;
+        margin-bottom: 0PX;
     }
     .banner-text-2{
         display: none;

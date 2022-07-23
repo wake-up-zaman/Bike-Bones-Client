@@ -1,5 +1,5 @@
 .Nnav{
-    margin-left:700px;
+    margin-left:600px;
 }
 .iconNav{
     font-size:40px;
@@ -8,6 +8,11 @@
     background-color:  #ffffff;
     color: black;
     font-weight: bold;
+}
+.logo{
+    width: 100px;
+    height: 50px;
+    margin-left: 100px;
 }
 @media only screen and (max-width:576px) {
     .title-mobile{
