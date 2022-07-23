@@ -15,7 +15,7 @@ const Banner = () => {
             <div className='banner-text'>
                 {/* <h2 className='banner-text-1'>Bike Bones Manufacturer</h2> */}
                 {/* <p className='banner-text-21'>40 years of experience we provide services</p> */}
-                <h2 className='banner-text-2'>Industry A variety of high<br/> quality bike products </h2>
+                <h2 className='banner-text-2'>A Industry of variety high<br/> quality bike products </h2>
                 <div class="form-control bike">
                     <div class="input-group">
                         <input type="text" placeholder="Search your desired Parts" class="input lg:w-72 input-bordered" />
