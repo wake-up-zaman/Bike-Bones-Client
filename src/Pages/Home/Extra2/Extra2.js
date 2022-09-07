@@ -12,7 +12,10 @@ const Extra2 = () => {
              <input className='mb-3 input-form' type='email' name='email' placeholder='                           Enter Your Email' required />
              
              </div>
+             <div className='extra-form2'>
              <button className='text-xl text-center COLOR3'>Get in Touch !</button>
+             </div>
+            
              
         </div>
     );

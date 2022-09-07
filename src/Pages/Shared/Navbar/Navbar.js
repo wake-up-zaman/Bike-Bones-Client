@@ -20,7 +20,18 @@ const Navbar = () => {
         {
             user && <li><Link to='/dashboard'>Dashboard</Link></li>
         }
-        { user ?<li><span onClick={logout}><Link to='/'>Sign Out</Link></span><div class='iconNav'><FaUserCircle /></div><div>{user.displayName}</div> </li> :<li><Link to='/login'>Login</Link></li>}
+        {user ? <li>
+            {user?.photoURL ?
+            <div className='sm:mb-2 lg:mb-0'>
+                <img
+                    src={user?.photoURL}
+                    class="navPhoto"
+                    alt="Avatar"
+                />
+            </div>
+ : <div class='iconNav'><FaUserCircle /></div>}<div className='NavName lg:mr-3 lg:mt-3'>{user.displayName}</div> <p className='NavSignOut lg:mr-3 lg:mt-4' onClick={logout}><Link to='/'>Sign Out</Link></p></li>
+
+            : <li className='NavLogin'><Link to='/login'>Login</Link></li>}
     </>
     return (
         <div className="navbar nav_color">
@@ -30,7 +41,7 @@ const Navbar = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 text-black">
-                    {
+                        {
                             menuItems
                         }
                     </ul>
@@ -39,9 +50,9 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex Nnav">
                 <ul className="menu menu-horizontal p-0">
-                {
-                            menuItems
-                        }
+                    {
+                        menuItems
+                    }
                 </ul>
             </div>
             <div className='navbar-end'>

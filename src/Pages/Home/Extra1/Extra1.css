@@ -1,6 +1,5 @@
 .extra-text{
-    width:650px;
-    margin-left: 450px;
+
     font-size: 20px;
     margin-top: 20px;
 }
@@ -8,19 +7,28 @@
     /* background-color: rgb(237, 231, 231); */
     background-color: #F6F9FF;
     padding: 30px;
+
 }
 .extra-below1{
     width:400px;
     border: 1px solid rgb(46, 40, 40);
     margin-top: 30px;
-    margin-left:70px;
+    margin-left:50px;
     padding: 15px;
     border-radius: 15px;
 
 
 }
+.extra-below{
+    display: flex;
+    justify-content: center;
+}
+.extra-text_main{
+    display: flex;
+    justify-content: center; 
+}
 .extra_text{
-
+    width: 800px;
     margin-top: 50px;
 }
 .extra-below2{

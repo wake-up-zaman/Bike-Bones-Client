@@ -28,7 +28,7 @@ const Part = ({ part }) => {
 
             </div>
 
-            <input onClick={()=>navigateToPurchase(_id)} value="Buy Now" className="btn button-ets text-white mt-5  mb-8" />
+            <input onClick={()=>navigateToPurchase(_id)} value="Buy Now" className="btn button-ets text-white" />
 
         </div>
     );

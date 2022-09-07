@@ -1,5 +1,6 @@
 .extra-form{
-    margin-left: 550px;
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
 
 }
@@ -9,11 +10,11 @@
     border-radius: 30px;
     width:400px;
     margin-bottom: 20px;
+    border-color: aliceblue;
 }
 .extra2-main{
     background-color: #9eb8ce;
     padding: 40px;
-
 
 }
 .extra2-banner{
@@ -28,7 +29,10 @@
     background-color: rgb(46, 161, 199);
     height: 50px;
     width:200px;
-    margin-left: 640px;
+}
+.extra-form2{
+    display: flex;
+    justify-content: center; 
 }
 
 @media only screen and (max-width:576px) {

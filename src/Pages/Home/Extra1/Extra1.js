@@ -3,13 +3,17 @@ import './Extra1.css';
 import {FaShippingFast,FaHandshake,FaStar} from "react-icons/fa";
 const Extra1 = () => {
     return (
-        <div className='extra'>
+        <div >
             <div>
                 <h2 className='text-center mt-12 mb-4 text-4xl text-dark text-bold'>Why Choose Us?</h2>
             </div>
-            <div className='extra-text text-center'>
+            <div className='extra'>
+                <div>
+                <div className='extra-text_main text-center'>
                 <p className='extra_text'>We’ve been Selling Genuine Motorcycle Parts and Accessories for the last 3 years. We present The Best Shopping site to Buy Motorcycle Parts online in Bangladesh. If you  choose  our  website for Buy Motorcycle Parts you not mistaken, and we always treat customers with respect.</p>
             </div>
+                </div>
+
             <div className='flex mb-8 extra-below'>
                 <div className='extra-below1'>
                     <p className='extra-logo'><FaShippingFast/></p>
@@ -23,6 +27,8 @@ const Extra1 = () => {
                     <p className='extra-logo'><FaStar></FaStar></p>
                     <h2 className='text-3xl text-center'>Our Reputation</h2>
                 </div>
+            </div>
+
             </div>
         </div>
     );

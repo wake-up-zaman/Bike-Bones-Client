@@ -16,12 +16,7 @@ const Review = ({ review }) => {
                                 <strong>{review.name}</strong>
                                 <span>{review.email}</span>
                             </div>
-
-
-
                         </div>
-
-
                     </div>
                     <div className='reviews'>
                             {(review.rating === '1' || review.rating === 1) && <div class="rating  ml-16 mt-8 lg:ml-20 lg:mt-6">

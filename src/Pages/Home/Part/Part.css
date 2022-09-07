@@ -9,11 +9,9 @@
     color:rgb(32, 109, 202)
 }
 .part{
-    width:400px;
-    height:570px;
     background-color: #E1E5E8;
     margin-bottom: 20px;
-
+    height: fit-content;
 
 }
 .part_button{
