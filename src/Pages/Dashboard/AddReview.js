@@ -16,7 +16,7 @@ const AddReview = () => {
             review: event.target.description.value,
         }
 
-        fetch('https://desolate-stream-53633.herokuapp.com/reviews', {
+        fetch('https://bike-bones.onrender.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

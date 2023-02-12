@@ -35,7 +35,7 @@ const AddProduct = () => {
                     overview:data.over
                 }
                 //send to my database
-                fetch('https://desolate-stream-53633.herokuapp.com/parts', {
+                fetch('https://bike-bones.onrender.com/parts', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',

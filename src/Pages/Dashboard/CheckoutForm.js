@@ -13,7 +13,7 @@ const CheckoutForm = ({purchase}) => {
     const {price,name,email,_id}=purchase;
 
     useEffect(()=>{
-        fetch('https://desolate-stream-53633.herokuapp.com/create-payment-intent',{
+        fetch('https://bike-bones.onrender.com/create-payment-intent',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

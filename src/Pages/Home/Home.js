@@ -12,10 +12,18 @@ const Home = () => {
     return (
         <div className='home'>
             <Banner></Banner>
+            <div className='text-center '>
+                <h3 className='text-accent text-3xl p-8 font-bold uppercase'>Products</h3>
+            </div>
             <Parts></Parts>
             <Summary></Summary>
             <Extra1></Extra1>
             <Extra2></Extra2>
+            <section id='testimonials'>
+                <div className='testimonial-heading'>
+                    <h1>Customer Reviews</h1>
+                </div>
+            </section>
             <Reviews></Reviews>
 
         </div>

@@ -8,7 +8,7 @@ const useToken=user=>{
             email: email
         };
         if(email){
-            fetch(`https://desolate-stream-53633.herokuapp.com/user/${email}`,{
+            fetch(`https://bike-bones.onrender.com/user/${email}`,{
                 method:'PUT',
                 headers:{
                     'content-type':'application/json'

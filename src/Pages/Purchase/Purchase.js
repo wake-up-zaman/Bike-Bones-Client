@@ -18,7 +18,7 @@ const Purchase = () =>{
     const [Email,setEmail]=useState('');
 
     useEffect(() => {
-        const url = `https://desolate-stream-53633.herokuapp.com/part/${_id}`;
+        const url = `https://bike-bones.onrender.com/part/${_id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setPart(data))
@@ -45,7 +45,7 @@ const Purchase = () =>{
         }
         
 
-        fetch('https://desolate-stream-53633.herokuapp.com/purchase', {
+        fetch('https://bike-bones.onrender.com/purchase', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

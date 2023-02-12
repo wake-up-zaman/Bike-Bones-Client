@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const ModalOfConfirm = ({deleteOrder, setDeleteOrder,refetch}) => {
 
     const handleDelete = id => {
-        fetch(`https://desolate-stream-53633.herokuapp.com/purchase/${id}`, {
+        fetch(`https://bike-bones.onrender.com/purchase/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

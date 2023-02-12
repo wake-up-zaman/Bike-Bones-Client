@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 const ConfirmationModal = ({deletePart,refetch,setDeletePart}) => {
     const handleDelete = id => {
-        const url = `https://desolate-stream-53633.herokuapp.com/parts/${id}`;
+        const url = `https://bike-bones.onrender.com/parts/${id}`;
         fetch(url, {
           method: 'DELETE'
         })

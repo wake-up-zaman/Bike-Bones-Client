@@ -18,7 +18,7 @@ const MyProfile = () => {
             bike:event.target.bike.value
         }
 
-        fetch(`https://desolate-stream-53633.herokuapp.com/myProfile`, {
+        fetch(`https://bike-bones.onrender.com/myProfile`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -39,10 +39,10 @@ const MyProfile = () => {
         <div>
             <div className='flex myProfile'>
                 <div class='icon'><FaUserCircle /></div>
-                <div>
+                {/* <div>
                     <h2 className='text-2xl text-bold'>{user.displayName}</h2>
                     <h2 className='text-xl text-bold'>{user.email}</h2>
-                </div>
+                </div> */}
             </div>
             <div className='lg:ml-48  mt-2 flex align-items-center'>
 

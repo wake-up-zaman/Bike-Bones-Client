@@ -9,14 +9,17 @@ import { FaUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
     const [user, loading, error] = useAuthState(auth);
+    console.log(user?.displayName);
     const logout = () => {
         signOut(auth);
         localStorage.removeItem('accessToken');
     };
     const menuItems = <>
         <li><Link to='/'>Home</Link></li>
+        <li><Link to='/blogs'>Shop</Link></li>
+        <li><Link to='/blogs'>Cart</Link></li>
         <li><Link to='/blogs'>Blogs</Link></li>
-        <li><Link to='/myPortfolio'>My Portfolio</Link></li>
+        {/* <li><Link to='/myPortfolio'>My Portfolio</Link></li> */}
         {
             user && <li><Link to='/dashboard'>Dashboard</Link></li>
         }
@@ -29,7 +32,7 @@ const Navbar = () => {
                     alt="Avatar"
                 />
             </div>
- : <div class='iconNav'><FaUserCircle /></div>}<div className='NavName lg:mr-3 lg:mt-3'>{user.displayName}</div> <p className='NavSignOut lg:mr-3 lg:mt-4' onClick={logout}><Link to='/'>Sign Out</Link></p></li>
+ : <div class='iconNav'><FaUserCircle /></div>}<div className='NavName lg:mr-3 lg:mt-2'>{user?.displayName}</div> <p className='NavSignOut lg:mr-3 lg:mt-2' onClick={logout}><Link to='/'>Sign Out</Link></p></li>
 
             : <li className='NavLogin'><Link to='/login'>Login</Link></li>}
     </>
@@ -46,7 +49,7 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl title-mobile">Bike-Bones</a>
+                <a className="btn btn-ghost normal-case text-xl title-mobile">Bike Bones</a>
             </div>
             <div className="navbar-center hidden lg:flex Nnav">
                 <ul className="menu menu-horizontal p-0">

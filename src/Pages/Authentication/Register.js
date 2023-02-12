@@ -18,6 +18,7 @@ const Register = () => {
         error,
       ] = useCreateUserWithEmailAndPassword(auth);
       const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+      
       let signInError;
 
       const [token]=useToken(user || gUser);
@@ -38,17 +39,17 @@ const Register = () => {
         await createUserWithEmailAndPassword(data.email, data.password)
         await updateProfile({ displayName: data.name});
         
-    
     };
 
     return (
-        <div className="card lg:card-side bg-base-100 shadow-xl lg:mr-60">
+
+        <div className="card  lg:card-side bg-base-100 shadow-xl ">
             <figure><img className='vector' src={login} alt="Album" /></figure>
-            <div className="cardr w-96  bg-base-100 shadow-xl">
+            <div className="cardx w-96  bg-base-100 shadow-xl">
                 <div className="card-body card2  pattern items-center text-center">
                     <h2 className="card-title text-3xl card3">Register</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <div className="form-control w-full max-w-xs">
+                    <div className="form-control w-full max-w-xs">
                             <label className="label">
                                 <span className="label-text">Name</span>
                             </label>
@@ -119,11 +120,11 @@ const Register = () => {
                         {signInError}
                         <input className='btn w-full btn-primary text-white mt-5' type="submit" value='Register' />
                     </form>
-                    <label className="label flex justify-end">
-                        <p>Already have an account?</p>
-                        <Link to='/login'><button className="btn btn-xs ml-6">Login</button></Link>
+            <label className="label flex justify-end">
+                 <p>Already have an account?</p>
+             <Link to='/login'><button className="btn btn-xs ml-6">Login</button></Link>
 
-                    </label>
+            </label>
 
                     <div className='social'>
                         <p className='mb-2'>Login with Social Account</p>

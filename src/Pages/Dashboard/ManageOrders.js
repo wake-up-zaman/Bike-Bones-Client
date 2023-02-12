@@ -9,7 +9,7 @@ import ManageOrder from './ManageOrder';
 const ManageOrders = () => {
     const [deleteOrder, setDeleteOrder] = useState(null)
     const [user, loading, error] = useAuthState(auth);
-    const { data: parts, isLoading, refetch } = useQuery('parts', () => fetch('https://desolate-stream-53633.herokuapp.com/purchaseForAll', {
+    const { data: parts, isLoading, refetch } = useQuery('parts', () => fetch('https://bike-bones.onrender.com/purchaseForAll', {
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }
@@ -18,12 +18,14 @@ const ManageOrders = () => {
     if (isLoading) {
         return <Loading></Loading>
     }
+    
     // const [parts, setParts] = useState([]);
     // useEffect(() => {
     //     fetch('https://desolate-stream-53633.herokuapp.com/purchaseForAll')
     //         .then(res => res.json())
     //         .then(data => setParts(data));
     // }, [])
+
     return (
         <div className='text-center lg:text-left'>
         <h2 className='text-center text-3xl font-bold mt-6 mb-3'>All Users Orders:{parts.length}</h2>

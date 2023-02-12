@@ -7,7 +7,7 @@ const Swal = require('sweetalert2')
 const ManageProduct = () => {
   const [deletePart, setDeletePart] = useState(null);
 
-  const { data: parts, isLoading, refetch } = useQuery('parts', () => fetch('https://desolate-stream-53633.herokuapp.com/parts', {
+  const { data: parts, isLoading, refetch } = useQuery('parts', () => fetch('https://bike-bones.onrender.com/parts', {
     headers: {
       authorization: `Bearer ${localStorage.getItem('accessToken')}`
     }

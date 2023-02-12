@@ -18,7 +18,7 @@ const Dashboard = () => {
             <label for="dashboard-sidebar" class="btn btn-primary drawer-button lg:hidden ml-32">Open Board</label>
             <Outlet > </Outlet>
         </div>
-        <div class="drawer-side">
+        <div class="drawer-side mt-2">
             <label for="dashboard-sidebar" class="drawer-overlay"></label>
             <ul class="menu p-4 overflow-y-auto w-80 bg-white lg:bg-transparent text-base-content">
                { !admin &&  <li><Link to='/dashboard'></Link></li>}

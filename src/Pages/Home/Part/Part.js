@@ -10,25 +10,24 @@ const Part = ({ part }) => {
     return (
         <div className="card part shadow-xl">
             <div className="">
-                <figure><img className="h-72 w-full" src={part.Img} alt="" /></figure>
+                <figure className=' partImg'><img className="h-72 w-full p-2" src={part.Img} alt="" /></figure>
                 <h2 className="text-2xl font-bold uppercase text-center">{part.name}</h2>
-
-
                 <div className="h-18 sm:mb-1.5">
                    <p className="text-center">{part.description1},</p>
                     <p className="text-center">{part.description2},</p>
                     <p className="text-center">{part.description3}.</p>
                 </div>
-                <div className="flex text-xl  justify-between ml-3 mr-3 my-5">
+                <div className="flex text-xl  justify-between ml-3 mr-3 my-2">
                     <p className="order text-primary">Min Order:{part.minimum_order}</p>
                     <p className="order text-accent ">Available:{part.available_product}</p>
                 </div>
-                <p className="text-center  font-bold  text-2xl ">Price:${part.price}</p>
+                <p className="text-center  font-bold  text-2xl my-2">Price:${part.price}</p>
 
 
             </div>
 
-            <input onClick={()=>navigateToPurchase(_id)} value="Buy Now" className="btn button-ets text-white" />
+            {/* <input onClick={()=>navigateToPurchase(_id)} value="Buy Now" className="btn button-ets text-white" /> */}
+            <button onClick={()=>navigateToPurchase(_id)}  className="buttonOfBuy">Buy Now</button>
 
         </div>
     );

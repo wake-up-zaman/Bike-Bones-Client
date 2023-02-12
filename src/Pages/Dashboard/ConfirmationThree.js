@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 const ConfirmationThree = ({deleteOrder, setDeleteOrder,refetch}) => {
     const handleDelete = id => {
-        fetch(`https://desolate-stream-53633.herokuapp.com/purchaseForAll/${id}`, {
+        fetch(`https://bike-bones.onrender.com/purchaseForAll/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

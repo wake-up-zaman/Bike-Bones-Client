@@ -49,3 +49,24 @@
 
 
 } */
+
+
+
+.buttonOfBuy{
+    background-color: #19D2AD;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.buttonOfBuy:hover{
+    background-color: #19D2AD;
+    padding: 15px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.partImg{
+    border-radius: 10px;
+}
