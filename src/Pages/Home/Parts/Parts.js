@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useQuery } from 'react-query';
 import Loading from '../../Shared/Loading/Loading';
+import Loading2 from '../../Shared/Loading/Loading2';
 import Part from '../Part/Part';
 import '../Part/Part.css'
 
@@ -25,7 +26,7 @@ const Parts = () => {
       );
     
       if (isLoading) {
-        return <Loading></Loading>;
+        return <Loading2></Loading2>;
       }
 
     return (

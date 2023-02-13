@@ -16,9 +16,9 @@ const Navbar = () => {
     };
     const menuItems = <>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/blogs'>Shop</Link></li>
-        <li><Link to='/blogs'>Cart</Link></li>
-        <li><Link to='/blogs'>Blogs</Link></li>
+        <li><Link to='/'>Shop</Link></li>
+        <li><Link to='/'>Cart</Link></li>
+        <li><Link to='/'>Blogs</Link></li>
         {/* <li><Link to='/myPortfolio'>My Portfolio</Link></li> */}
         {
             user && <li><Link to='/dashboard'>Dashboard</Link></li>
@@ -49,7 +49,7 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl title-mobile">Bike Bones</a>
+                <a className="btn btn-ghost normal-case text-xl title-mobile">Galaxy.Com</a>
             </div>
             <div className="navbar-center hidden lg:flex Nnav">
                 <ul className="menu menu-horizontal p-0">

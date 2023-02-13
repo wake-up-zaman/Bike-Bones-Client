@@ -13,7 +13,7 @@ const Home = () => {
         <div className='home'>
             <Banner></Banner>
             <div className='text-center '>
-                <h3 className='text-accent text-3xl p-8 font-bold uppercase'>Products</h3>
+                <h3 className='text-accent text-3xl p-8 font-bold uppercase'>Computer Parts</h3>
             </div>
             <Parts></Parts>
             <Summary></Summary>

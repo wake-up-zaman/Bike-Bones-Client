@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useQuery } from 'react-query';
 import Loading from '../../Shared/Loading/Loading';
+import Loading2 from '../../Shared/Loading/Loading2';
 import Review from './Review';
 import './Review.css'
 
@@ -23,7 +24,7 @@ const Reviews = () => {
       );
     
       if (isLoading) {
-        return <Loading></Loading>;
+        return <Loading2></Loading2>;
       }
     return (
         <div className='review_main'>
